@@ -10,14 +10,366 @@
     --bs-bg-opacity: 0;
 }
 .logo{
-    width: 50px;
+    width: auto;
     height: 50px;
 }
 .nav-link{
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media (max-width: 768px) {
+
+
+
+/* Seccion Nosotros */
+.containerNosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9,auto);
+    grid-template-areas:
+    "titulo titulo"
+    "textoNosotros fotoNosotros"
+    "texto2Nosotros texto2Nosotros"
+    "textoImpacto textoImpacto"
+    "foto1 descripcion1"
+    "descripcion2 foto2"
+    "foto3 descripcion3"
+    "descripcion4 foto4"
+    "foto5 descripcion5"
+    ;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.containerNosotros img{
+    width: 160px;
+    height: 176px;
+    border-radius: 30px;
+}
+.textoNosotros{
+    grid-area: textoNosotros;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fotoNosotros{
+    grid-area: fotoNosotros;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto2Nosotros{
+    grid-area: texto2Nosotros ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.portadaNosotros{
+    background-image: url(../media/fotos/vela1.jpg);
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.textoImpacto{
+    grid-area: textoImpacto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.textoImpacto h2{
+    margin-bottom: 20px;
+}
+.descripcion1{
+    grid-area: descripcion1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.foto1{
+    display: flex;
+    grid-area: foto1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.descripcion2{
+    grid-area: descripcion2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.foto2{
+    grid-area: foto2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.descripcion3{
+    grid-area: descripcion3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.foto3{
+    grid-area: foto3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.descripcion4{
+    grid-area: descripcion4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.foto4{
+    grid-area: foto4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.descripcion5{
+    grid-area: descripcion5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.foto5{
+    grid-area: foto5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Seccion Mayorista */
+
+.portadaMayorista{
+    background-image: url(../media/fotos/vela1.jpg);
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.textoMayorista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+.botonMayorista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.botonMayorista button{
+    background-color: rgba(149, 68, 34, 1);
+    border-radius: 30px;
+    padding: 5px 50px;
+    color: white;
+    text-decoration: underline;
+}
+.botonMayorista button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Seccion Contacto */
+.portadaContacto{
+    background-image: url(../media/fotos/vela1.jpg);
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.textoContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+.textoContacto iframe{
+    margin: 50px;
+}
+.textoContacto h4{
+    text-align: start;
+}
+.textoContacto h3{
+    text-align: center;
+    font-size: 22px;
+}
+.textoContacto h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.containerContacto img{
+    width: 20px;
+    height: 20px;
+}
+.ubicacion{
+    display: flex;
+}
+.ubicacion p{
+    padding-left: 5px;
+    text-align: center;
+}
+.horarios{
+    margin: 30px 0px;
+    display: flex;
+}
+.horarios p{
+    padding-left: 5px;
+}
+.ig{
+    margin: 30px 0px;
+    display: flex;
+}
+.ig p{
+    padding-left: 5px;
+}
+
+
+/* Header */
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+/* Footer */
+.footer{
+    background-color: rgba(149, 68, 34, 1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+}
+.footer h3{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.footer ul li{
+    list-style: none;
+    color: white;
+    margin: 10px 0px;
+}
+.footer ul li a{
+    list-style: none;
+    color: white;
+    margin: 10px 0px;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+.footer ul li img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+}
+.derechos{
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+.underline{
+    text-decoration: underline;
+}
+.underline:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px) {
     .nav-item{
         border-bottom: 1px solid white;
         height: 95px;
@@ -25,16 +377,4 @@
         justify-content: start;
         align-items: center;
         }
-    .navbar-toggler-icon{
-        color: white;
-    }
-    .navbar-toggler{
-        text-decoration: none;
-    }
-    .custom-toggler.navbar-toggler-icon {
-        border-color: lightgreen;
-    }
-    .d-block w-100{
-        height: 224px;
-    }
 }

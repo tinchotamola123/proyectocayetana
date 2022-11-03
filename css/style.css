@@ -20,12 +20,36 @@ main{
     margin: auto;
     height: 600px;
 }
+.destacados{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productoDestacado{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.pieProducto{
+    background-color: rgba(194, 105, 67, 1);
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
 .destacados h2{
     text-align: center;
 }
 .destacados img{
     width: 400px;
-    height: 400px;
+    height: 500px;
+}
+.beneficios{
+    color: rgba(149, 68, 34, 1);
+    text-align: center;
 }
 
 /* Seccion Nosotros */
@@ -48,9 +72,9 @@ main{
     font-size: 1.2rem;
 }
 .portadaNosotros{
-    background-image: url(../media/fotos/portadacontacto.avif);
-    height: 550px;
-    background-size: 100% ;
+    background-image: url(../media/fotos/portada.png);
+    height: 600px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -197,9 +221,9 @@ main{
 /* Seccion Mayorista */
 
 .portadaMayorista{
-    background-image: url(../media/fotos/portadacontacto.avif);
-    height: 550px;
-    background-size: 100% ;
+    background-image: url(../media/fotos/portada.png);
+    height: 600px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -231,9 +255,9 @@ main{
 
 /* Seccion Contacto */
 .portadaContacto{
-    background-image: url(../media/fotos/portadacontacto.avif);
-    height: 550px;
-    background-size: 100% ;
+    background-image: url(../media/fotos/portada.png);
+    height: 600px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;

@@ -3,22 +3,30 @@
     padding: 0;
     box-sizing: border-box; 
 }
-.navbar {
-    background-color: rgba(149, 68, 34, 1);
+@font-face {
+    font-family: Monserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
 }
-.bg-light{
-    --bs-bg-opacity: 0;
-}
-.logo{
-    width: auto;
-    height: 50px;
-}
-.nav-link{
-    color: white;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+main{
+    font-family: Monserrat;
 }
 
+/* Seccion Index */
 
+.carousel-item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+}
+.destacados h2{
+    text-align: center;
+}
+.destacados img{
+    width: 400px;
+    height: 400px;
+}
 
 /* Seccion Nosotros */
 .containerNosotros{
@@ -36,21 +44,25 @@
     "descripcion4 foto4"
     "foto5 descripcion5"
     ;
-    margin-top: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 1.2rem;
+}
+.portadaNosotros{
+    background-image: url(../media/fotos/portadacontacto.avif);
+    height: 550px;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .titulo{
     grid-area: titulo;
     text-align: center;
-    margin-bottom: 20px;
+    padding-top: 50px;
 }
 .containerNosotros img{
-    width: 160px;
-    height: 176px;
+    width: 500px;
+    height: 500px;
     border-radius: 30px;
 }
 .textoNosotros{
@@ -59,12 +71,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 50px;
 }
 .fotoNosotros{
     grid-area: fotoNosotros;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 .texto2Nosotros{
     grid-area: texto2Nosotros ;
@@ -72,29 +86,20 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    padding: 50px;
 }
-.portadaNosotros{
-    background-image: url(../media/fotos/vela1.jpg);
-    height: 200px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+.portadaNosotros h2{
+    color: white;
 }
 .textoImpacto{
     grid-area: textoImpacto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.2rem;
 }
 .textoImpacto h2{
     margin-bottom: 20px;
@@ -105,9 +110,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 .foto1{
     display: flex;
@@ -116,7 +120,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 50px;
 }
 .descripcion2{
     grid-area: descripcion2;
@@ -133,7 +137,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 50px;
 }
 .descripcion3{
     grid-area: descripcion3;
@@ -142,7 +146,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 .foto3{
     grid-area: foto3;
@@ -150,7 +154,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 50px;
 }
 .descripcion4{
     grid-area: descripcion4;
@@ -159,7 +163,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 .foto4{
     grid-area: foto4;
@@ -167,7 +171,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 50px;
 }
 .descripcion5{
     grid-area: descripcion5;
@@ -176,7 +180,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 .foto5{
     grid-area: foto5;
@@ -184,103 +188,83 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 50px;
 }
 
 /* Seccion Mayorista */
 
 .portadaMayorista{
-    background-image: url(../media/fotos/vela1.jpg);
-    height: 200px;
-    background-size: 100% 100%;
+    background-image: url(../media/fotos/portadacontacto.avif);
+    height: 550px;
+    background-size: 100% ;
     background-repeat: no-repeat;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+}
+.portadaMayorista h2{
+    color:white;
 }
 .textoMayorista{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: 150px 0px;
+}
+.span{
+    color: red;
+    font-size: 1.7rem;
+    left: 20px;
+}
+.mediosPago{
+    display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-}
-.botonMayorista{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.botonMayorista button{
-    background-color: rgba(149, 68, 34, 1);
-    border-radius: 30px;
-    padding: 5px 50px;
-    color: white;
-    text-decoration: underline;
-}
-.botonMayorista button a{
-    text-decoration: none;
-    color: white;
+    
 }
 
 /* Seccion Contacto */
 .portadaContacto{
-    background-image: url(../media/fotos/vela1.jpg);
-    height: 200px;
-    background-size: 100% 100%;
+    background-image: url(../media/fotos/portadacontacto.avif);
+    height: 550px;
+    background-size: 100% ;
     background-repeat: no-repeat;
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
+.portadaContacto h2{
+    color: white;
+    font-size: 3rem;
+}
 .textoContacto{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-}
-.textoContacto iframe{
-    margin: 50px;
-}
-.textoContacto h4{
-    text-align: start;
+    align-items: center;
+    font-size: 1rem;
 }
 .textoContacto h3{
-    text-align: center;
-    font-size: 22px;
+    margin-bottom: 50px;
 }
-.textoContacto h2{
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 25px;
+.map{
+    width: 100%;
+    height: 500px;
+    margin-top:20px;
+    margin-bottom: 50px;
 }
 .containerContacto img{
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 }
 .ubicacion{
     display: flex;
 }
 .ubicacion p{
     padding-left: 5px;
-    text-align: center;
+    font-size: 1.5rem;
 }
 .horarios{
     margin: 30px 0px;
@@ -288,6 +272,7 @@
 }
 .horarios p{
     padding-left: 5px;
+    font-size: 1.5rem;
 }
 .ig{
     margin: 30px 0px;
@@ -295,36 +280,42 @@
 }
 .ig p{
     padding-left: 5px;
+    font-size: 1.5rem;
 }
 
 
 /* Header */
-header{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 13px;
+.navbar {
+    background-color: rgba(149, 68, 34, 1);
 }
+.bg-light{
+    --bs-bg-opacity: 0;
+}
+.logo{
+    width: auto;
+    height: 50px;
+}
+.nav-link{
+    color: white;
+}
+
 
 /* Footer */
 .footer{
     background-color: rgba(149, 68, 34, 1);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 13px;
-}
-.footer h3{
-    text-align: center;
-    padding: 20px;
-    color: white;
 }
 .footer ul li{
+    display: flex;
+    flex-direction: row;
     list-style: none;
     color: white;
     margin: 10px 0px;
+    
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 .footer ul li a{
     list-style: none;
@@ -338,21 +329,32 @@ header{
 .footer ul li img{
     width: 20px;
     height: 20px;
-    margin-right:10px;
 }
 .derechos{
     text-align: center;
     color: white;
     border-top: 1px solid white;
     padding: 20px;
-    font-size: 0.8rem;
+
 }
-.underline{
-    text-decoration: underline;
+.redes img{
+    width: 25px;
+    height: 25px;
 }
-.underline:hover{
-    text-decoration: underline;
-    color: rgb(0, 0, 0);
+.redes{
+    display: flex;
+    flex-direction: column;
+}
+.redes a{
+    text-decoration: none;
+    color:white;
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding-top: 20px;
 }
 
 
@@ -368,8 +370,7 @@ header{
 
 
 
-
-@media (max-width: 990px) {
+@media only screen and (max-width: 760px) {
     .nav-item{
         border-bottom: 1px solid white;
         height: 95px;

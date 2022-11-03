@@ -32,10 +32,11 @@ main{
 .containerNosotros{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(9,auto);
+    grid-template-rows: repeat(10,auto);
     grid-template-areas:
     "titulo titulo"
-    "textoNosotros fotoNosotros"
+    "textoNosotros textoNosotros"
+    "fotoNosotros fotoNosotros"
     "texto2Nosotros texto2Nosotros"
     "textoImpacto textoImpacto"
     "foto1 descripcion1"
@@ -54,6 +55,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.portadaNosotros h2{
+    color: white;
+    font-size: 3rem;
 }
 .titulo{
     grid-area: titulo;
@@ -88,9 +93,7 @@ main{
     text-align: center;
     padding: 50px;
 }
-.portadaNosotros h2{
-    color: white;
-}
+
 .textoImpacto{
     grid-area: textoImpacto;
     padding: 50px;
@@ -204,13 +207,14 @@ main{
 }
 .portadaMayorista h2{
     color:white;
+    font-size: 3rem;
 }
 .textoMayorista{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 150px 0px;
 }
 .span{
@@ -325,7 +329,7 @@ main{
     text-decoration: none;
 }
 .footer ul li a:hover{
-    color: rgb(0, 0, 0);
+    transform: scale(1.1,1.1);
 }
 .footer ul li img{
     width: 20px;
@@ -351,6 +355,10 @@ main{
     color:white;
     margin-bottom: 20px;
 }
+.redes a:hover{
+    transform: scale(1.1,1.1);
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
@@ -363,15 +371,9 @@ main{
 
 
 
+/* MEDIAS QUERRY */
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 760px) {
+@media screen and (max-width:460px) {
     .nav-item{
         border-bottom: 1px solid white;
         height: 95px;
@@ -379,4 +381,226 @@ main{
         justify-content: start;
         align-items: center;
         }
+    .navbar-toggler{
+        border: transparent;
+    }
+    .navbar-toggler:focus{
+        box-shadow:transparent
+    }
+    /* Footer */
+    .footer ul li{
+        flex-direction: column;
+        margin: 0px 0px;
+        padding: 5px;
+        padding-top: 5px;
+    }
+    .footer ul{
+        flex-direction: column;
+        gap: 0px;
+    }
+    dl, ol, ul{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer ul li a{
+        margin: 0px 0px;
+    }
+    .footer ul li img{
+        width: 20px;
+        height: 20px;
+    }
+    .derechos{
+        padding: 10px;
+    }
+    .redes img{
+        width: 20px;
+        height: 20px;
+    }
+    .redes{
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+    .redes a{
+        margin-bottom: 0px;
+    }
+    .flex{
+        display: inline;
+        margin: 0px 0px;          
+    }    
+
+    /* Seccion Mayorista */
+
+    .portadaMayorista{
+        height: 250px;
+        }
+    .portadaMayorista h2{
+        font-size: 1.7rem;
+        }
+    .textoMayorista{
+        font-size: 1.0rem;
+        padding: 100px 10px;
+        }
+    .span{
+        font-size: 1.2rem;
+        left: 20px;
+        }
+    .mediosPago{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    /* Seccion Contacto */
+    .portadaContacto{
+        height: 250px;
+    }
+    .portadaContacto h2{
+        font-size: 1.7rem;
+    }
+    .containerContacto img{
+        width: 30px;
+        height: 30px;
+    }
+    .containerContacto h3{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .textoContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .textoContacto h3{
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+    }
+    .textoContacto h2{
+        margin-bottom: 25px;
+        font-size: 1.4rem;
+    }
+    .map{
+        width: 100%;
+        height: 500px;
+        margin-top:20px;
+        margin-bottom: 50px;
+    }
+    
+    .ubicacion{
+        margin: 0px 55px;
+    }
+    .ubicacion p{
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+    .horarios{
+        margin: 30px 0px;
+    }
+    .horarios p{
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+    .ig{
+        margin: 30px 0px;
+    }
+    .ig p{
+        padding-left: 5px;
+        font-size: 1rem;
+    }
+
+    /* Seccion Nosotros */
+    .containerNosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas:
+        "titulo titulo"
+        "textoNosotros textoNosotros"
+        "fotoNosotros fotoNosotros"
+        "texto2Nosotros texto2Nosotros"
+        "textoImpacto textoImpacto"
+        "foto1 descripcion1"
+        "descripcion2 foto2"
+        "foto3 descripcion3"
+        "descripcion4 foto4"
+        "foto5 descripcion5"
+        ;
+        margin-bottom: 50px;
+    }
+    .containerNosotros h2{
+        font-size: 1.3rem;
+    }
+    .portadaNosotros{
+        height: 250px;
+    }
+    .portadaNosotros h2{
+        font-size: 1.5rem;
+    }
+    .titulo{
+        padding-top: 50px;
+    }
+    .containerNosotros img{
+        width: 190px;
+        height: 190px;
+    }
+    .textoNosotros{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .fotoNosotros{
+        padding: 10px;
+    }
+    .texto2Nosotros{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .textoImpacto{
+        font-size: 0.9rem;
+    }
+    .textoImpacto h2{
+        margin-bottom: 20px;
+    }
+    .descripcion1{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .foto1{
+        display: flex;
+        grid-area: foto1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .descripcion2{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .foto2{
+        padding: 10px;
+    }
+    .descripcion3{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .foto3{
+        padding: 10px;
+    }
+    .descripcion4{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .foto4{
+        padding: 10px;
+    }
+    .descripcion5{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .foto5{
+        padding: 10px;
+    }
 }

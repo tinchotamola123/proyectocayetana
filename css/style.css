@@ -51,6 +51,39 @@ main{
     color: rgba(149, 68, 34, 1);
     text-align: center;
 }
+.contenedorPie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+.contenedorPieItem{
+    width: 50%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.camion{
+    background-color: brown;
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camionimg{
+    width: 60px;
+    height: 60px;
+}
 
 /* Seccion Nosotros */
 .containerNosotros{

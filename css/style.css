@@ -22,14 +22,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-
-.carousel-item img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 600px;
-}
 .destacados{
     padding-top: 50px;
     display: flex;
@@ -71,7 +63,7 @@ main{
 }
 .contenedorPieItem{
     width: 50%;
-    height: 100px;
+    height: 80px;
     border: 2px solid black;
     border-radius: 50px;
     margin: 20px 0px;
@@ -81,18 +73,60 @@ main{
     padding: 0px 30px;
 }
 .camion{
-    background-color: brown;
-    width: 90px;
-    height: 90px;
+    background-color: rgba(149, 68, 34, 1);
+    width: 70px;
+    height: 70px;
     padding: 0px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.camionimg{
-    width: 60px;
-    height: 60px;
+.camionImg{
+    width: 45px;
+    height: 45px;
+}
+.bolsa{
+    background-color: rgba(149, 68, 34, 1);
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bolsaImg{
+    width: 450px;
+    height: 45px;
+}
+.hoja{
+    background-color: rgba(149, 68, 34, 1);
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hojaImg{
+    width: 45px;
+    height: 45px;
+}
+.regla{
+    background-color: rgba(149, 68, 34, 1);
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reglaImg{
+    width: 45px;
+    height: 45px;
 }
 
 /* Seccion Nosotros */
@@ -113,6 +147,8 @@ main{
     "foto5 descripcion5"
     ;
     font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
 }
 .portadaNosotros{
     background-image: url(../media/fotos/portada.png);
@@ -138,8 +174,8 @@ main{
     border-radius: 30px;
 }
 .fotosGrid{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 .textoNosotros{
     grid-area: textoNosotros;
@@ -289,9 +325,17 @@ main{
     padding: 150px 0px;
 }
 .span{
-    color: red;
+    color: rgb(223, 120, 76);
     font-size: 1.7rem;
     left: 20px;
+}
+.spanPago{
+    text-align: center;
+    color: rgb(223, 120, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
 }
 .mediosPago{
     display: flex;
@@ -516,6 +560,14 @@ main{
         font-size: 1.2rem;
         left: 20px;
         }
+    .spanPago{
+        text-align: center;
+        color: rgb(223, 120, 76);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
     .mediosPago{
         display: flex;
         flex-direction: column;
@@ -561,6 +613,7 @@ main{
     
     .ubicacion{
         margin: 0px 55px;
+        width: 100%;
     }
     .ubicacion p{
         padding-left: 5px;
@@ -599,9 +652,15 @@ main{
         "foto5 descripcion5"
         ;
         margin-bottom: 50px;
+        width: 100%;
+        margin: 0px;
     }
     .containerNosotros h2{
         font-size: 1.3rem;
+        color: rgba(149, 68, 34, 1);
+    }
+    .cayetana{
+        color: rgba(149, 68, 34, 1);
     }
     .portadaNosotros{
         height: 250px;
@@ -677,5 +736,75 @@ main{
     }
     .foto5{
         padding: 10px;
+    }
+
+    /* Seccion Index */
+
+    .portadaIndex{
+        height: 250px;
+    }
+    .productoDestacado{
+        padding: 25px;
+    }
+    .pieProducto{
+        font-size: 1rem;
+    }
+    .destacados h2{
+        font-size: 1.5rem;
+    }
+    .destacados img{
+        width: 328px;
+        height: 328px;
+    }
+    .beneficios{
+        font-size: 1.5rem;
+        margin: 25px 0px;
+    }
+    .contenedorPie{
+        width: 90%;
+    }
+    .contenedorPieItem{
+        width: 328px;
+        height: 72px;
+        margin: 10px 0px;
+        padding: 0px 5px;
+        justify-content: center;
+    }
+    .camion{
+        width: 50px;
+        height: 50px;
+    }
+    .camionImg{
+        width: 25px;
+        height: 25px;
+    }
+    .bolsa{
+        width: 50px;
+        height: 50px;
+    }
+    .bolsaImg{
+        width: 25px;
+        height: 25px;
+    }
+    .hoja{
+        width: 50px;
+        height: 50px;
+    }
+    .hojaImg{
+        width: 25px;
+        height: 25px;
+    }
+    .regla{
+        width: 50px;
+        height: 50px;
+    }
+    .reglaImg{
+        width: 25px;
+        height: 25px;
+    }
+    .textoBeneficio{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 244px;
     }
 }

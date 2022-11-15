@@ -169,8 +169,8 @@ main{
     padding-top: 50px;
 }
 .imgNosotros{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 750px;
     border-radius: 30px;
 }
 .fotosGrid{
@@ -336,6 +336,11 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 1.7rem;
+}
+.imageMp{
+    margin-top: 20px;
+    width: 350px;
+    height: 100px;
 }
 .mediosPago{
     display: flex;
@@ -560,6 +565,10 @@ main{
         font-size: 1.2rem;
         left: 20px;
         }
+    .imageMp{
+        width: 220px;
+        height: 50px;
+    }
     .spanPago{
         text-align: center;
         color: rgb(223, 120, 76);
@@ -680,8 +689,8 @@ main{
         font-size: 0.9rem;
     }
     .imgNosotros{
-        width: 320px;
-        height: 200px;
+        width: 250px;
+        height: 300px;
     }
     .fotoNosotros{
         padding: 10px;

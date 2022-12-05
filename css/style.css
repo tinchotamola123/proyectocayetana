@@ -22,6 +22,10 @@ main{
     align-items: center;
     justify-content: center;
 }
+.carousel-inner img{
+    width: 1329px;
+    height: 600px;
+}
 .destacados{
     padding-top: 50px;
     display: flex;
@@ -151,13 +155,13 @@ main{
     margin: auto;
 }
 .portadaNosotros{
-    background-image: url(../media/fotos/portada.png);
-    height: 600px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+   
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.portadaNosotros img{
+    width: 100%;
 }
 .portadaNosotros h2{
     color: white;
@@ -304,17 +308,20 @@ main{
 /* Seccion Mayorista */
 
 .portadaMayorista{
-    background-image: url(../media/fotos/portada.png);
-    height: 600px;
+    background-image: url(../media/fotos/fondocontacto1.jpg);
+    height: 700px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.portadaMayorista h2{
-    color:white;
-    font-size: 3rem;
+.containerMayorista h2{
+    color:rgb(0, 0, 0);
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 50px;
+    filter: blur(0px);
 }
 .textoMayorista{
     display: flex;
@@ -322,7 +329,8 @@ main{
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    padding: 150px 0px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 .span{
     color: rgb(223, 120, 76);
@@ -351,8 +359,8 @@ main{
 
 /* Seccion Contacto */
 .portadaContacto{
-    background-image: url(../media/fotos/portada.png);
-    height: 600px;
+    background-image: url(../media/fotos/fondocontacto1.jpg);
+    height: 700px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -559,7 +567,7 @@ main{
         }
     .textoMayorista{
         font-size: 1.0rem;
-        padding: 100px 10px;
+        padding: 50px 20px;
         }
     .span{
         font-size: 1.2rem;

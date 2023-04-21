@@ -6,6 +6,5 @@ http://cayetanaaromas.epizy.com/index.html
 
 ![](/s1.jpeg)
 
-![](/s2.jpeg)
 
 By Martin Tamola
